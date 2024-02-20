@@ -49,7 +49,7 @@ import type {
 } from "WidgetProvider/constants";
 import { WIDGET_TAGS } from "constants/WidgetConstants";
 import { ResponsiveBehavior } from "layoutSystems/common/utils/constants";
-import { FEATURE_FLAG } from "@appsmith/entities/FeatureFlag";
+// import { FEATURE_FLAG } from "@appsmith/entities/FeatureFlag";
 
 export function defaultValueValidation(
   value: any,
@@ -548,11 +548,11 @@ class InputWidget extends BaseInputWidget<InputWidgetProps, WidgetState> {
           isBindProperty: true,
           isTriggerProperty: false,
           validation: { type: ValidationTypes.BOOLEAN },
-          hidden: () => {
-            return !super.getFeatureFlag(
-              FEATURE_FLAG.license_widget_rtl_support_enabled,
-            );
-          },
+          // hidden: () => {
+          //   return !super.getFeatureFlag(
+          //     FEATURE_FLAG.license_widget_rtl_support_enabled,
+          //   );
+          // },
         },
       ]),
     );
@@ -834,7 +834,7 @@ class InputWidget extends BaseInputWidget<InputWidgetProps, WidgetState> {
 
     const autoFillProps =
       !this.props.shouldAllowAutofill &&
-      isInputTypeEmailOrPassword(this.props.inputType)
+        isInputTypeEmailOrPassword(this.props.inputType)
         ? { autoComplete: "off" }
         : {};
 
