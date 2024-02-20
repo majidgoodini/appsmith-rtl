@@ -235,6 +235,16 @@ class TextWidget extends BaseWidget<TextWidgetProps, WidgetState> {
             isTriggerProperty: false,
             validation: { type: ValidationTypes.BOOLEAN },
           },
+          {
+            propertyName: "rtl",
+            label: "Enable RTL",
+            helpText: "Enables right to left text direction",
+            controlType: "SWITCH",
+            isJSConvertible: true,
+            isBindProperty: true,
+            isTriggerProperty: false,
+            validation: { type: ValidationTypes.BOOLEAN },
+          },
         ],
       },
     ];
@@ -566,6 +576,7 @@ class TextWidget extends BaseWidget<TextWidgetProps, WidgetState> {
             this.props.truncateButtonColor || this.props.accentColor
           }
           widgetId={this.props.widgetId}
+          rtl={this.props.rtl}
         />
       </WidgetStyleContainer>
     );
@@ -609,6 +620,7 @@ export interface TextWidgetProps extends WidgetProps, TextStyles {
   borderColor?: Color;
   borderWidth?: number;
   overflow: OverflowTypes;
+  rtl?: boolean;
 }
 
 export default TextWidget;

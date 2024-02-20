@@ -91,7 +91,7 @@ export const TextContainer = styled.div<{
   `}
 `;
 
-const StyledIcon = styled(Icon)<{ backgroundColor?: string }>`
+const StyledIcon = styled(Icon) <{ backgroundColor?: string }>`
   cursor: pointer;
   bottom: 0;
   left: 0;
@@ -110,9 +110,10 @@ type StyledTextProps = React.PropsWithChildren<{
   fontStyle?: string;
   fontSize?: TextSize;
   minHeight?: number;
+  rtl?: boolean
 }>;
 
-export const StyledText = styled(Text)<StyledTextProps>`
+export const StyledText = styled(Text) <StyledTextProps>`
   height: ${(props) =>
     props.overflow === OverflowTypes.TRUNCATE
       ? `calc(100% - ${ELLIPSIS_HEIGHT}px)`
@@ -120,7 +121,7 @@ export const StyledText = styled(Text)<StyledTextProps>`
   overflow-x: hidden;
   overflow-y: ${(props) =>
     props.overflow !== OverflowTypes.SCROLL ||
-    props.overflow === OverflowTypes.TRUNCATE.valueOf()
+      props.overflow === OverflowTypes.TRUNCATE.valueOf()
       ? "hidden"
       : "auto"};
   text-overflow: ellipsis;
@@ -134,7 +135,7 @@ export const StyledText = styled(Text)<StyledTextProps>`
   flex-direction: ${(props) => (props.isTruncated ? "column" : "unset")};
   align-items: ${(props) =>
     props.overflow === OverflowTypes.SCROLL ||
-    props.overflow === OverflowTypes.TRUNCATE
+      props.overflow === OverflowTypes.TRUNCATE
       ? "flex-start"
       : "center"};
   background: ${(props) => props?.backgroundColor};
@@ -153,6 +154,7 @@ export const StyledText = styled(Text)<StyledTextProps>`
     line-height: 1.2;
     white-space: pre-wrap;
     text-align: ${(props) => props.textAlign.toLowerCase()};
+    direction: ${(props) => props.rtl ? "rtl" : "ltr"};
   }
   ${({ minHeight }) => `
     span {
@@ -223,6 +225,7 @@ export interface TextComponentProps extends ComponentProps {
   borderWidth?: number;
   overflow: OverflowTypes;
   minHeight?: number;
+  rtl?: boolean
 }
 
 interface State {
@@ -297,6 +300,7 @@ class TextComponent extends React.Component<TextComponentProps, State> {
       textAlign,
       textColor,
       truncateButtonColor,
+      rtl
     } = this.props;
 
     return (
@@ -305,6 +309,7 @@ class TextComponent extends React.Component<TextComponentProps, State> {
           fontFamily={fontFamily !== "System Default" ? fontFamily : undefined}
         >
           <StyledText
+            rtl={rtl}
             backgroundColor={backgroundColor}
             className={this.props.isLoading ? "bp3-skeleton" : "bp3-ui-text"}
             ellipsize={ellipsize}

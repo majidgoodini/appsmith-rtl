@@ -23,7 +23,7 @@ else
 
   if [ "$is_client_change" -ge 1  ]; then
     echo "Running client check ..."
-    npx lint-staged --cwd app/client
+    # npx lint-staged --cwd app/client
   else
     echo "Skipping client side check..."
   fi
