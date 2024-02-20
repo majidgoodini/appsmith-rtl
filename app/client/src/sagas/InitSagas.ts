@@ -73,7 +73,7 @@ import {
   fetchFeatureFlagsInit,
   fetchProductAlertInit,
 } from "actions/userActions";
-import { embedRedirectURL, validateResponse } from "./ErrorSagas";
+import { validateResponse } from "./ErrorSagas";
 import type { ApiResponse } from "api/ApiResponses";
 import type { ProductAlert } from "reducers/uiReducers/usersReducer";
 import type { FeatureFlags } from "@appsmith/entities/FeatureFlag";
@@ -258,9 +258,9 @@ export function* getInitResponses({
     } catch (e: any) {
       // when the user is an anonymous user we embed the url with the attempted route
       // this is taken care in ce code repo but not on ee
-      if (e?.response?.status === 401) {
-        embedRedirectURL();
-      }
+      // if (e?.response?.status === 401) {
+      //   embedRedirectURL();
+      // }
 
       yield call(
         executeActionDuringUserDetailsInitialisation,
