@@ -80,6 +80,7 @@ import { WDSParagraphWidget } from "./wds/WDSParagraphWidget";
 import { WDSModalWidget } from "./wds/WDSModalWidget";
 import { WDSStatBoxWidget } from "./wds/WDSStatBoxWidget";
 import { WDSKeyValueWidget } from "./wds/WDSKeyValueWidget";
+import MyDatePickerWidget from './MyDatePickerWidget'
 
 const LegacyWidgets = [
   CanvasWidget,
@@ -132,6 +133,7 @@ const LegacyWidgets = [
   CodeScannerWidget,
   ListWidgetV2,
   ExternalWidget,
+  MyDatePickerWidget,
 ];
 
 const DeprecatedWidgets = [
