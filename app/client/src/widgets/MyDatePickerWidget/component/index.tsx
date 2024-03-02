@@ -381,7 +381,7 @@ class DatePickerComponent extends React.Component<
             <DatePicker
               calendar={persian}
               locale={persian_fa}
-              style={{ borderRadius: this.props.borderRadius, boxShadow: this.props.boxShadow, width: "100%", minHeight: "2rem" }}
+              style={{ borderRadius: this.props.borderRadius, boxShadow: this.props.boxShadow, width: "100%", minHeight: "2rem", direction: "rtl", borderColor: "#e0dede", color: "black" }}
               format={this.props.dateFormat}
               weekStartDayIndex={this.props.firstDayOfWeek}
               disabled={this.props.isDisabled}

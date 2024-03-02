@@ -9,30 +9,6 @@
 @import "assets/fonts/custom/index.css";
 @import "assets/fonts/google/index.css";
 
-@font-face {
-  font-family: RASMIO;
-  src: url('assets/fonts/YekanBakhFaNum-VF.ttf');
-}
-
-* {
-  font-family: RASMIO, Calibri, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif, tahoma !important;
-  font-variation-settings: 'dots' 1;
-}
-
-p {
-  line-height: 32px;
-}
-
-@supports (font-variation-settings: normal) {
-  * {
-    font-family: RASMIO, Calibri, -apple-system, BlinkMacSystemFont, Segoe UI,
-      Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-      sans-serif, tahoma !important;
-    font-variation-settings: 'dots' 1;
-  }
-}
 
 :root {
   /* TODO: This needs to be fixed! This override is to maintain branding changes. */
@@ -45,9 +21,6 @@ p {
   --on-canvas-ui-z-index: 999999;
 }
 
-*{
-  font-family: RASMIO;
-}
 
 body {
   margin: 0;

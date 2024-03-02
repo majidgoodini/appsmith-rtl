@@ -33,8 +33,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -410,7 +411,7 @@
         "appBoxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
       },
       "fontFamily": {
-        "appFont": "System Default"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -448,8 +449,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -821,7 +823,7 @@
         "appBoxShadow": "none"
       },
       "fontFamily": {
-        "appFont": "System Default"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -859,8 +861,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -1231,7 +1234,7 @@
         "appBoxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
       },
       "fontFamily": {
-        "appFont": "Rubik"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -1269,8 +1272,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -1637,7 +1641,7 @@
         "appBoxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
       },
       "fontFamily": {
-        "appFont": "Rubik"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -1675,8 +1679,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -2043,7 +2048,7 @@
         "appBoxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
       },
       "fontFamily": {
-        "appFont": "Open Sans"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -2081,8 +2086,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -2449,7 +2455,7 @@
         "appBoxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
       },
       "fontFamily": {
-        "appFont": "Inter"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -2487,8 +2493,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -2855,7 +2862,7 @@
         "appBoxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
       },
       "fontFamily": {
-        "appFont": "Nunito Sans"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -2893,8 +2900,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -3261,7 +3269,7 @@
         "appBoxShadow": "none"
       },
       "fontFamily": {
-        "appFont": "Nunito Sans"
+        "appFont": "VazirMatn"
       }
     }
   },
@@ -3300,8 +3308,9 @@
           "Noto Sans",
           "Open Sans",
           "Roboto",
-          "Rubik",
-          "Ubuntu"
+          "YekanBakh",
+          "Ubuntu",
+          "VazirMatn"
         ]
       }
     },
@@ -3677,7 +3686,7 @@
         "appBoxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
       },
       "fontFamily": {
-        "appFont": "Nunito Sans"
+        "appFont": "VazirMatn"
       }
     }
   }

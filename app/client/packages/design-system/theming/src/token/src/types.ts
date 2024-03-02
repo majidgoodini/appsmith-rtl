@@ -57,6 +57,7 @@ import montserrat from "@capsizecss/metrics/montserrat";
 import nunitoSans from "@capsizecss/metrics/nunitoSans12pt";
 import appleSystem from "@capsizecss/metrics/appleSystem";
 import BlinkMacSystemFont from "@capsizecss/metrics/blinkMacSystemFont";
+import VazirMatn from "@capsizecss/metrics/vazirmatn";
 
 export const FONT_METRICS = {
   Poppins: poppins,
@@ -72,6 +73,7 @@ export const FONT_METRICS = {
   "-apple-system": appleSystem,
   BlinkMacSystemFont: BlinkMacSystemFont,
   "Segoe UI": segoeUI,
+  VazirMatn: VazirMatn,
 } as const;
 
 // we use "as const" here because we need to iterate by variants

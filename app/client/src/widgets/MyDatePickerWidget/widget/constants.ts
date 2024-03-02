@@ -33,14 +33,14 @@ export const DateFormatOptions = [
         value: "YYYY/MM/DDTHH:mm:ss",
     },
     {
-        label: moment().format("YYYY-MM-DD A hh:mm:ss"),
-        subText: "YYYY-MM-DD A hh:mm:ss",
-        value: "YYYY-MM-DD A hh:mm:ss",
+        label: moment().format("YYYY-MM-DD hh:mm:ss A"),
+        subText: "YYYY-MM-DD hh:mm:ss A",
+        value: "YYYY-MM-DD hh:mm:ss A",
     },
     {
         label: moment().format("YYYY/MM/DD A hh:mm:ss"),
-        subText: "YYYY/MM/DD A hh:mm:ss",
-        value: "YYYY/MM/DD A hh:mm:ss",
+        subText: "YYYY/MM/DD hh:mm:ss A",
+        value: "YYYY/MM/DD hh:mm:ss A",
     },
     {
         label: moment().format("DD/MM/YYYY HH:mm"),
@@ -53,6 +53,11 @@ export const DateFormatOptions = [
         value: "D MMMM, YYYY",
     },
     {
+        label: moment().format("D MMMM YYYY"),
+        subText: "D MMMM YYYY",
+        value: "D MMMM YYYY",
+    },
+    {
         label: moment().format("YYYY MM DD"),
         subText: "YYYY MM DD",
         value: "YYYY MM DD",
@@ -63,9 +68,30 @@ export const DateFormatOptions = [
         value: "H:mm A D MMMM, YYYY",
     },
     {
+        label: moment().format("D MMMM YYYY H:mm A"),
+        subText: "D MMMM YYYY H:mm A",
+        value: "D MMMM YYYY H:mm A",
+    },
+    {
         label: moment().format("YYYY MM DD A H:mm"),
         subText: "YYYY MM DD A H:mm",
         value: "YYYY MM DD A H:mm",
+    },
+    {
+        label: moment().format("DD MM YYYY H:mm A"),
+        subText: "DD MM YYYY H:mm A",
+        value: "DD MM YYYY H:mm A",
+    },
+    {
+        label: moment().format("YYYY/MM/DD H:mm A"),
+        subText: "YYYY/MM/DD H:mm A",
+        value: "YYYY/MM/DD H:mm A",
+    },
+
+    {
+        label: moment().format("YYYY-MM-DD H:mm A"),
+        subText: "YYYY-MM-DD H:mm A",
+        value: "YYYY-MM-DD H:mm A",
     },
     {
         label: moment().format("YYYY-MM-DD"),
