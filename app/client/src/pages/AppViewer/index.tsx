@@ -195,47 +195,45 @@ function AppViewer(props: Props) {
 
   const renderChildren = () => {
     return (
-      <div style={{ direction: "rtl" }}>
-        <EditorContextProvider renderMode="PAGE">
-          {!isWDSEnabled && (
-            <WidgetGlobaStyles
-              fontFamily={selectedTheme.properties.fontFamily.appFont}
-              primaryColor={selectedTheme.properties.colors.primaryColor}
-            />
-          )}
-          <HtmlTitle
-            description={pageDescription}
-            name={currentApplicationDetails?.name}
+      <EditorContextProvider renderMode="PAGE">
+        {!isWDSEnabled && (
+          <WidgetGlobaStyles
+            fontFamily={selectedTheme.properties.fontFamily.appFont}
+            primaryColor={selectedTheme.properties.colors.primaryColor}
           />
-          <AppViewerBodyContainer
-            backgroundColor={
-              isWDSEnabled ? "" : selectedTheme.properties.colors.backgroundColor
-            }
+        )}
+        <HtmlTitle
+          description={pageDescription}
+          name={currentApplicationDetails?.name}
+        />
+        <AppViewerBodyContainer
+          backgroundColor={
+            isWDSEnabled ? "" : selectedTheme.properties.colors.backgroundColor
+          }
+        >
+          <AppViewerBody
+            className={CANVAS_SELECTOR}
+            hasPages={pages.length > 1}
+            headerHeight={headerHeight}
+            ref={focusRef}
           >
-            <AppViewerBody
-              className={CANVAS_SELECTOR}
-              hasPages={pages.length > 1}
-              headerHeight={headerHeight}
-              ref={focusRef}
-            >
-              {isInitialized && <AppViewerPageContainer />}
-            </AppViewerBody>
-            <div className={"fixed hidden right-8 z-3 md:flex bottom-4"}>
-              {!hideWatermark && (
-                <a
-                  className="hover:no-underline"
-                  href="https://appsmith.com"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <BrandingBadge />
-                </a>
-              )}
-              <KBViewerFloatingButton />
-            </div>
-          </AppViewerBodyContainer>
-        </EditorContextProvider>
-      </div>
+            {isInitialized && <AppViewerPageContainer />}
+          </AppViewerBody>
+          <div className={"fixed hidden right-8 z-3 md:flex bottom-4"}>
+            {!hideWatermark && (
+              <a
+                className="hover:no-underline"
+                href="https://appsmith.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BrandingBadge />
+              </a>
+            )}
+            <KBViewerFloatingButton />
+          </div>
+        </AppViewerBodyContainer>
+      </EditorContextProvider>
     );
   };
 

@@ -42,16 +42,18 @@ function ThemeFontControl(props: ThemeFontControlProps) {
         onSelect={onSelect}
         value={selectedOption}
       >
-        {options.map((option, index) => (
-          <Option key={index} value={option}>
-            <div className="flex space-x-2  w-full cursor-pointer items-center">
-              <FontText className="flex items-center justify-center">
-                Aa
-              </FontText>
-              <div className="leading-normal">{option}</div>
-            </div>
-          </Option>
-        ))}
+        {options.map((option, index) => {
+          return (
+            <Option key={index} value={option}>
+              <div className="flex space-x-2  w-full cursor-pointer items-center">
+                <FontText className="flex items-center justify-center">
+                  Aa
+                </FontText>
+                <div className="leading-normal">{option === 'Rubik' ? "YekanBakh" : option}</div>
+              </div>
+            </Option>
+          )
+        })}
       </Select>
     </section>
   );

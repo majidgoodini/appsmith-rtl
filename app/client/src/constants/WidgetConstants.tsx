@@ -238,6 +238,7 @@ export const WIDGET_TAGS = {
   TOGGLES: "Toggles",
   SLIDERS: "Sliders",
   CONTENT: "Content",
+  MYDATEPICKER : "MyDatePicker",
   EXTERNAL: "External",
 } as const;
 

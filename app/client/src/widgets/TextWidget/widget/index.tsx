@@ -302,8 +302,12 @@ class TextWidget extends BaseWidget<TextWidgetProps, WidgetState> {
                 value: "Roboto",
               },
               {
-                label: "Rubik",
-                value: "Rubik",
+                label: "YekanBakh",
+                value: "YekanBakh",
+              },
+              {
+                label: "VazirMatn",
+                value: "VazirMatn"
               },
               {
                 label: "Ubuntu",
