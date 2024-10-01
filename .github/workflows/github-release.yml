@@ -19,7 +19,6 @@ jobs:
 
     outputs:
       tag: ${{ steps.get_version.outputs.tag }}
-      is_beta: ${{ steps.get_version.outputs.is_beta }}
 
     steps:
       - name: Environment details
@@ -32,19 +31,17 @@ jobs:
       - name: Get the version
         id: get_version
         run: |
-          tag="${GITHUB_REF#refs/tags/}"
-          echo "tag=$tag" >> $GITHUB_OUTPUT
-          if [[ $tag == *"beta"* ]]; then
-            echo "is_beta=true" >> $GITHUB_OUTPUT
-          else
-            echo "is_beta=false" >> $GITHUB_OUTPUT
+          if ! [[ ${GITHUB_REF-} =~ ^refs/tags/v[[:digit:]]\.[[:digit:]]+(\.[[:digit:]]+)?$ ]]; then
+            echo "Invalid tag: '${GITHUB_REF-}'. Has to be like `v1.22`, `v1.22.33` only."
+            exit 1
           fi
+          echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
 
   client-build:
     needs:
       - prelude
 
-    runs-on: ubuntu-latest-4-cores
+    runs-on: ubuntu-latest
 
     defaults:
       run:
